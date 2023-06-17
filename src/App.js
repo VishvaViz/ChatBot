@@ -1,11 +1,10 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Test from './Comp/Test'
-
+import ChatBot from './Comp/ChatBot';
 
 function App() {
     return (<React.Fragment>
-        <Test/>   
+        <ChatBot/>   
     </React.Fragment>);
 }
 
