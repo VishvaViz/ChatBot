@@ -538,7 +538,7 @@ function Test() {
     return (
         <div className="container"
             style={
-                { marginLeft: "435px" }
+                { marginLeft: "400px" }
             }>
             <ChatBot steps={steps} />
         </div>
