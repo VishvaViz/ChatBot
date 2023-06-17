@@ -44,36 +44,42 @@ function Test() {
                     trigger: "2"
                 },
             ]
-        }, {
+        }, 
+        {
             id: "1",
             message: "Please Provide Your Email and Mobile",
             trigger: "user"
-        }, {
+        },
+        {
             id: "user",
             user: true,
             trigger: "val"
-        }, {
+        },
+        {
             id: "val",
             message: "Thank for the input Our Admin team will contact You ASAP",
             trigger: "con"
-        }, {
+        }, 
+        {
             id: "con",
             message: "Thank You want to continue",
             trigger: "option"
-        }, {
+        },
+        {
             id: "option",
             options: [
                 {
-                    value: 1,
+                    value: '1',
                     label: "Yes",
-                    trigger: "04"
+                    trigger: '2'
                 }, {
-                    value: 2,
+                    value: '2',
                     label: "No",
                     message: "Thank your contacting our chat"
                 },
             ]
-        }, {
+        }, 
+        {
             id: "2",
             options: [
                 {
@@ -90,7 +96,8 @@ function Test() {
                     trigger: "admin"
                 },
             ]
-        }, {
+        }, 
+        {
             id: "fee",
             options: [
                 {
@@ -103,7 +110,8 @@ function Test() {
                     trigger: "fpcourse"
                 },
             ]
-        }, {
+        }, 
+        {
             id: "fcourse",
             options: [
                 {
@@ -131,7 +139,8 @@ function Test() {
                     trigger: "fbsc"
                 },
             ]
-        }, {
+        }, 
+        {
             id: "fpcourse",
             options: [
                 {
@@ -159,7 +168,8 @@ function Test() {
                     trigger: "fmsc"
                 },
             ]
-        }, {
+        }, 
+        {
             id: "fbca",
             component: (
                 <div>
@@ -172,8 +182,10 @@ function Test() {
                         <h6 className="text-primary">For More Info Contact Admin</h6>
                     </div>
                 </div>
-            )
-        }, {
+            ),
+            trigger: "continue"
+        }, 
+        {
             id: "fbba",
             component: (
                 <div>
@@ -186,8 +198,10 @@ function Test() {
                         <h6 className="text-primary">For More Info Contact Admin</h6>
                     </div>
                 </div>
-            )
-        }, {
+            ),
+            trigger: "continue"
+        }, 
+        {
             id: "fbcom",
             component: (
                 <div>
@@ -200,7 +214,8 @@ function Test() {
                         <h6 className="text-primary">For More Info Contact Admin</h6>
                     </div>
                 </div>
-            )
+            ),
+            trigger: "continue"
         }, {
             id: "fbism",
             component: (
@@ -214,8 +229,10 @@ function Test() {
                         <h6 className="text-primary">For More Info Contact Admin</h6>
                     </div>
                 </div>
-            )
-        }, {
+            ),
+            trigger: "continue"
+        }, 
+        {
             id: "fbsc",
             component: (
                 <div>
@@ -228,8 +245,10 @@ function Test() {
                         <h6 className="text-primary">For More Info Contact Admin</h6>
                     </div>
                 </div>
-            )
-        }, {
+            ),
+            trigger: "continue"
+        }, 
+        {
             id: "fmca",
             component: (
                 <div>
@@ -242,8 +261,10 @@ function Test() {
                         <h6 className="text-primary">For More Info Contact Admin</h6>
                     </div>
                 </div>
-            )
-        }, {
+            ),
+            trigger: "continue"
+        }, 
+        {
             id: "fmba",
             component: (
                 <div>
@@ -256,8 +277,10 @@ function Test() {
                         <h6 className="text-primary">For More Info Contact Admin</h6>
                     </div>
                 </div>
-            )
-        }, {
+            ),
+            trigger: "continue"
+        }, 
+        {
             id: "fmism",
             component: (
                 <div>
@@ -270,8 +293,10 @@ function Test() {
                         <h6 className="text-primary">For More Info Contact Admin</h6>
                     </div>
                 </div>
-            )
-        }, {
+            ),
+            trigger: "continue"
+        }, 
+        {
             id: "fmsc",
             component: (
                 <div>
@@ -284,8 +309,10 @@ function Test() {
                         <h6 className="text-primary">For More Info Contact Admin</h6>
                     </div>
                 </div>
-            )
-        }, {
+            ),
+            trigger: "continue"
+        }, 
+        {
             id: "fmcom",
             component: (
                 <div>
@@ -298,8 +325,10 @@ function Test() {
                         <h6 className="text-primary">For More Info Contact Admin</h6>
                     </div>
                 </div>
-            )
-        }, {
+            ),
+            trigger: "continue"
+        }, 
+        {
             id: "course",
             options: [
                 {
@@ -312,7 +341,8 @@ function Test() {
                     trigger: "pg"
                 },
             ]
-        }, {
+        }, 
+        {
             id: "ug",
             options: [
                 {
@@ -344,7 +374,8 @@ function Test() {
                     trigger: "bcomism"
                 },
             ]
-        }, {
+        }, 
+        {
             id: "pg",
             options: [
                 {
@@ -372,55 +403,67 @@ function Test() {
                     trigger: "msc"
                 },
             ]
-        }, {
+        }, 
+        {
             id: "continue",
             message: "ToContinue",
             trigger: "val"
-        }, {
+        }, 
+        {
             id: "val",
             options: [
                 {
                     value: "1",
                     label: "YES",
-                    trigger: "ug"
+                    trigger: "2"
                 }, {
                     value: "2",
                     label: "NO",
                     trigger: "thank"
                 },
             ]
-        }, {
+        }, 
+        {
             id: "bca",
             component: <Bca />,
             trigger: "continue"
-        }, {
+        }, 
+        {
             id: "bba",
             component: <Bba />,
             trigger: "continue"
-        }, {
+        }, 
+        {
             id: "bcom",
             component: <Bcom />,
             trigger: "continue"
-        }, {
+        }, 
+        {
             id: "biotech",
             component: <Biotech />,
             trigger: "continue"
-        }, {
+        }, 
+        {
             id: "bsc",
             component: <Bsc />,
             trigger: "continue"
-        }, {
+        }, 
+        {
             id: "bcomism",
             component: <BcomIsm />,
             trigger: "continue"
-        }, {
+        }, 
+        {
             id: "thank",
             message: "Thank You Bye",
             end: true
-        }, {
+        }, 
+        {
             id: "mca",
-            component: <Mca />
-        }, {
+            component: <Mca />,
+            trigger: "continue"
+        }, 
+        {
             id: "mba",
             options: [
                 {
@@ -436,42 +479,58 @@ function Test() {
                     label: "MBA(Finance)",
                     trigger: "mfin"
                 },
-            ]
-        }, {
+            ],
+            trigger: "continue"
+        }, 
+        {
             id: "mhr",
-            component: <Mhr />
-        }, {
+            component: <Mhr />,
+            trigger: "continue"
+        }, 
+        {
             id: "mmark",
-            component: <Mmark />
-        }, {
+            component: <Mmark />,
+            trigger: "continue"
+        }, 
+        {
             id: "mfin",
-            component: <Mfinace />
-        }, {
+            component: <Mfinace />,
+            trigger: "continue"
+        }, 
+        {
             id: "mcom",
-            component: <Mcom />
-        }, {
+            component: <Mcom />,
+            trigger: "continue"
+        }, 
+        {
             id: "mtech",
-            component: <Mtech />
-        }, {
+            component: <Mtech />,
+            trigger: "continue"
+        }, 
+        {
             id: "msc",
-            component: <Msc />
+            component: <Msc />,
+            trigger: "continue"
         }, {
             id: "admin",
             options: [
                 {
                     value: "1",
                     label: "Contact",
-                    trigger: "con"
+                    trigger: "cont"
                 }, {
                     value: "2",
                     label: "HelpDesk",
                     trigger: "help"
                 },
-            ]
-        }, {
-            id: "con",
+            ],
+            trigger: "continue"
+        }, 
+        {
+            id: "cont",
             message: "admin@gmail.com"
-        }, {
+        }, 
+        {
             id: "help",
             message: "helpdesk@gmail.com"
         },
